@@ -101,6 +101,7 @@ public class Account {
 		if ((savingBalance + amount) >= 0) {
 			calcSavingDeposit(amount);
 			System.out.println("New saving Account Balance: " + moneyFormat.format(savingBalance));
+			System.out.println("changing the code");
 		} else {
 			System.out.println("Balance Cannot be Negative." + "\n");
 		}
@@ -111,6 +112,3 @@ public class Account {
 	private double checkingBalance = 500;
 	private double savingBalance = 1000;
 }
-
-
-
